@@ -42,7 +42,6 @@ O sistema realiza as seguintes etapas:
 
 ### Pré-requisitos
 
-- Python 3.9 ou superior instalado
 - Google Chrome instalado
 - ChromeDriver compatível com sua versão do Chrome
 
@@ -113,7 +112,7 @@ Para executar sem abrir a janela do navegador:
 ```python
 from selenium.webdriver.chrome.options import Options
 chrome_options = Options()
-chrome_options.headless = True
+chrome_options.add_argument('--headless')
 navegador = webdriver.Chrome(options=chrome_options)
 ```
 
